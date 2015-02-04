@@ -1,0 +1,7 @@
+#SSH tunnel
+
+#core-machine->srvgal
+vagrant ssh core-01 -- -L 9990:localhost:8080 -N
+
+#srvgal->localmachine
+ssh srvgal102 -L 9990:localhost:9990 -N
