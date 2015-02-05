@@ -33,10 +33,8 @@ git subtree pull --prefix ansible/roles/ansible-coreos-babelnet-hujo https://git
  - submit and start following units:
   - registry
    - ansible-playbook -i vagranttest coreos-registry.yml
-  - wildfly
-   - ansible-playbook -i vagranttest coreos-wildfly.yml
-  - babelnet-hujo
-   - ansible-playbook -i vagranttest coreos-babelnet-hujo.yml
+  - elasticsearch
+   - ansible-playbook -i vagranttest coreos-elasticsearch.yml
  - Test babelnet API
    - `` curl -X POST http://localhost:9990/babelnet/filter/tweets -H "Content-Type: application/json" -d '{"tweets":[{"id":1,"text":"my text"}, {"id":2,"text":"Q for booksellers: if I put the barcode on the *inside* back flap of a dust jacket, am I shooting myself, or you, in the foot?"}]}'
      ``
