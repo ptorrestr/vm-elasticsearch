@@ -1,0 +1,4 @@
+- hosts: local
+  gather_facts: no
+  roles:
+    - { role: ansible-coreos-spark, sparkslave_instances_number: "3" }
