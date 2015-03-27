@@ -1,4 +1,7 @@
 ---
 registry_hostname: 'dockerregistry'
 registry_port: '5000'
+sparkmaster_hostname: 'spark-master'
+sparkmaster_port: '7077'
 elasticsearch_image_name: '{{ registry_hostname }}:{{ registry_port }}/elasticsearch'
+spark_image_name: '{{ registry_hostname }}:{{ registry_port }}/spark'

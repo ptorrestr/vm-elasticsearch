@@ -3,3 +3,4 @@ ansible/units
 ansible/docker
 
 vagrant/share-data
+vagrant/tmp
